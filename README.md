@@ -1,7 +1,7 @@
 # Arduino_Assignments
 > Hands-on Arduino Assignments: Explore RGB LEDs, Web Servers, Bluetooth, IoT, and more through interactive experiments and projects!
 
-📝 Table of Contents
+### Table of Contents
 
 🌈 Built-in RGB LED & Web Server
 
