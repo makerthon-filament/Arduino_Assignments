@@ -2,9 +2,8 @@
 #include <WiFiNINA.h>
 #include <NeoPixelConnect.h>
 #include <Arduino_LSM6DSOX.h>
-#define SECRET_SSID "Skylife_STBWifi_2G_503"
-#define SECRET_OPTIONAL_PASS "12345678"
-
+#define SECRET_SSID ""
+#define SECRET_OPTIONAL_PASS ""
 const char SSID[] = SECRET_SSID;
 const char PASS[] = SECRET_OPTIONAL_PASS;
 #define NUM_OF_SUB_PIXEL 5
@@ -18,7 +17,6 @@ int status = WL_IDLE_STATUS;
 WiFiServer server(80);
 void printWifiStatus();
 String generateHtmlResponse();
-
 void setup()
 {
   Serial.begin(9600);
@@ -197,25 +195,21 @@ String generateHtmlResponse()
   htmlResponse += "</html>";
   return htmlResponse;
 }
-
 void printWifiStatus()
 {
   // Wi-Fi 네트워크 이름 출력
   Serial.println("📡 ===== Wi-Fi 상태 정보 =====");
   Serial.print("📶 네트워크 이름 (SSID): ");
   Serial.println(WiFi.SSID());
-
   // 현재 할당된 IP 주소 출력
   IPAddress ip = WiFi.localIP();
   Serial.print("🌐 IP 주소: ");
   Serial.println(ip);
-
   // Wi-Fi 신호 강도 (RSSI) 출력
   long rssi = WiFi.RSSI();
   Serial.print("📊 신호 강도 (RSSI): ");
   Serial.print(rssi);
   Serial.println(" dBm");
-
   // 웹 브라우저에서 웹 서버 확인 URL 출력
   Serial.println("================================");
   Serial.println("🌍 웹 브라우저에서 웹 서버에 접속하려면 다음 주소를 입력하세요:");
