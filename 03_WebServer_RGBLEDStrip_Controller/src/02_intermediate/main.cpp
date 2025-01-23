@@ -2,8 +2,8 @@
 #include <WiFiNINA.h>
 #include <NeoPixelConnect.h>
 #include <Arduino_LSM6DSOX.h>
-#define SECRET_SSID ""
-#define SECRET_OPTIONAL_PASS ""
+#define SECRET_SSID "Skylife_STBWifi_2G_503"
+#define SECRET_OPTIONAL_PASS "12345678"
 
 const char SSID[] = SECRET_SSID;
 const char PASS[] = SECRET_OPTIONAL_PASS;
