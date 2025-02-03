@@ -3,8 +3,8 @@
 
 // ==================== 상수 및 객체 정의 ====================
 #define DEBUG_MODE_ENABLE 1  // 디버그 모드 활성화
-#define NUM_OF_PIXEL 12      // 네오픽셀 LED 수
-#define PIXEL_CONTROL_PIN 15 // 네오픽셀 데이터 핀
+#define NUM_OF_PIXEL 5       // 네오픽셀 LED 수
+#define PIXEL_CONTROL_PIN 20 // 네오픽셀 데이터 핀
 
 // BLE 서비스 및 특성 설정
 BLEService myService("71c46861-691a-4b1e-9ddb-d722fa9ad632");
